@@ -1,0 +1,14 @@
+package org.example.DAO;
+
+import org.example.entities.Empleados;
+
+import java.util.List;
+
+public interface EmpleadosDAO {
+
+    //Crea nuevos empleados
+    Empleados create(Empleados EmpleadosDAO);
+
+    //Mostrar los empleados
+    List<Empleados> findAll();
+}

@@ -1,0 +1,21 @@
+package org.example.entities;
+
+
+import jakarta.persistence.*;
+
+import java.io.Serializable;
+
+@Entity
+@Table(name = "Empleados")
+public class Empleados implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private String nombre;
+    private String email;
+    private String departamento;
+
+
+
+}
